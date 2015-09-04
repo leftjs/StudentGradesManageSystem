@@ -1,0 +1,2 @@
+# StudentGradesManageSystem
+一个使用Java swing的学生成绩管理系统，软件工程实验周的数据库大作业

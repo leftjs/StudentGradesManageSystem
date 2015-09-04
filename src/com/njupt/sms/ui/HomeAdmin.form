@@ -1,0 +1,489 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="com.njupt.sms.ui.HomeAdmin">
+  <grid id="27dc6" binding="homeAdmin" layout-manager="GridLayoutManager" row-count="2" column-count="4" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="0" left="0" bottom="0" right="0"/>
+    <constraints>
+      <xy x="20" y="20" width="770" height="400"/>
+    </constraints>
+    <properties/>
+    <border type="none"/>
+    <children>
+      <component id="30b08" class="javax.swing.JButton" binding="exitButton">
+        <constraints>
+          <grid row="0" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="退出"/>
+        </properties>
+      </component>
+      <component id="d71e3" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="欢迎您,至高无上的管理员,"/>
+        </properties>
+      </component>
+      <component id="2941e" class="javax.swing.JLabel" binding="nameLabel">
+        <constraints>
+          <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="张加胜"/>
+        </properties>
+      </component>
+      <hspacer id="8dec2">
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </hspacer>
+      <tabbedpane id="b2724" binding="tabbedPane1" default-binding="true">
+        <constraints>
+          <grid row="1" column="0" row-span="1" col-span="4" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <preferred-size width="200" height="200"/>
+          </grid>
+        </constraints>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <grid id="ed54e" layout-manager="GridLayoutManager" row-count="4" column-count="4" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <tabbedpane title="课程/教师管理"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <component id="8554e" class="javax.swing.JButton" binding="addOneRowCourseButton">
+                <constraints>
+                  <grid row="0" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="添加一行"/>
+                </properties>
+              </component>
+              <component id="10062" class="javax.swing.JButton" binding="deleteOneRowCourseButton">
+                <constraints>
+                  <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="删除一行"/>
+                </properties>
+              </component>
+              <component id="b946c" class="javax.swing.JButton" binding="addOneRowTeacherButton1">
+                <constraints>
+                  <grid row="2" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="添加一行"/>
+                </properties>
+              </component>
+              <component id="d95a8" class="javax.swing.JButton" binding="deleteOneRowTeacherButton1">
+                <constraints>
+                  <grid row="2" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="删除一行"/>
+                </properties>
+              </component>
+              <component id="b41cc" class="javax.swing.JButton" binding="saveCourseButton">
+                <constraints>
+                  <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="保存课程表"/>
+                </properties>
+              </component>
+              <component id="2160a" class="javax.swing.JButton" binding="saveTeacherButton">
+                <constraints>
+                  <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="保存教师表"/>
+                </properties>
+              </component>
+              <hspacer id="1335a">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+              </hspacer>
+              <scrollpane id="82a73">
+                <constraints>
+                  <grid row="1" column="0" row-span="1" col-span="4" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties/>
+                <border type="none" title="课程表"/>
+                <children>
+                  <component id="627fb" class="javax.swing.JTable" binding="table1" default-binding="true">
+                    <constraints/>
+                    <properties>
+                      <background color="-2034196"/>
+                      <foreground color="-12502992"/>
+                    </properties>
+                  </component>
+                </children>
+              </scrollpane>
+              <scrollpane id="47e06">
+                <constraints>
+                  <grid row="3" column="0" row-span="1" col-span="4" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <foreground color="-12502992"/>
+                </properties>
+                <border type="none" title="教师表"/>
+                <children>
+                  <component id="38715" class="javax.swing.JTable" binding="table2" default-binding="true">
+                    <constraints/>
+                    <properties>
+                      <background color="-2034196"/>
+                      <foreground color="-12502992"/>
+                    </properties>
+                  </component>
+                </children>
+              </scrollpane>
+            </children>
+          </grid>
+          <grid id="9bb49" layout-manager="GridLayoutManager" row-count="2" column-count="4" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <tabbedpane title="学生信息管理"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <component id="fffba" class="javax.swing.JButton" binding="addOneStudentRowButton">
+                <constraints>
+                  <grid row="0" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="添加一行"/>
+                </properties>
+              </component>
+              <component id="6f39a" class="javax.swing.JButton" binding="saveStudentTableButton">
+                <constraints>
+                  <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="保存学生表"/>
+                </properties>
+              </component>
+              <component id="632ef" class="javax.swing.JButton" binding="deleteOneStudentRowButton">
+                <constraints>
+                  <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="删除一行"/>
+                </properties>
+              </component>
+              <scrollpane id="3ff86">
+                <constraints>
+                  <grid row="1" column="0" row-span="1" col-span="4" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font name="Apple Chancery" size="14" style="1"/>
+                  <foreground color="-12502992"/>
+                </properties>
+                <border type="none" title="学生信息表"/>
+                <children>
+                  <component id="f26ca" class="javax.swing.JTable" binding="table3" default-binding="true">
+                    <constraints/>
+                    <properties>
+                      <background color="-2034196"/>
+                    </properties>
+                  </component>
+                </children>
+              </scrollpane>
+              <component id="13d70" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <foreground color="-4489387"/>
+                  <text value="TIPS:各字段请尽量按照标准填写,如果保存不成功,请检查输入,默认删除不正确数据"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+          <grid id="58b33" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <tabbedpane title="成绩录入维护"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <grid id="2d0df" layout-manager="GridLayoutManager" row-count="2" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                <margin top="0" left="0" bottom="0" right="0"/>
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties/>
+                <border type="none"/>
+                <children>
+                  <scrollpane id="f44a9">
+                    <constraints>
+                      <grid row="1" column="0" row-span="1" col-span="2" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties/>
+                    <border type="none" title="各课程成绩录入情况表"/>
+                    <children>
+                      <component id="d4b93" class="javax.swing.JTable" binding="table4" default-binding="true">
+                        <constraints/>
+                        <properties>
+                          <background color="-2034196"/>
+                          <foreground color="-12502992"/>
+                        </properties>
+                      </component>
+                    </children>
+                  </scrollpane>
+                  <component id="728c5" class="javax.swing.JButton" binding="cleanButton">
+                    <constraints>
+                      <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <text value="清除录入或者暂存状态"/>
+                    </properties>
+                  </component>
+                  <hspacer id="eac37">
+                    <constraints>
+                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                  </hspacer>
+                </children>
+              </grid>
+            </children>
+          </grid>
+          <grid id="5487e" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <tabbedpane title="成绩查询"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <splitpane id="b2350">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                    <preferred-size width="200" height="200"/>
+                  </grid>
+                </constraints>
+                <properties/>
+                <border type="none"/>
+                <children>
+                  <grid id="244e5" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                    <margin top="0" left="0" bottom="0" right="0"/>
+                    <constraints>
+                      <splitpane position="left"/>
+                    </constraints>
+                    <properties/>
+                    <border type="none"/>
+                    <children>
+                      <scrollpane id="86e05">
+                        <constraints>
+                          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                            <minimum-size width="250" height="-1"/>
+                          </grid>
+                        </constraints>
+                        <properties/>
+                        <border type="none" title="所有课程"/>
+                        <children>
+                          <component id="63a60" class="javax.swing.JTable" binding="table5" default-binding="true">
+                            <constraints/>
+                            <properties>
+                              <background color="-2034196"/>
+                              <foreground color="-12502992"/>
+                            </properties>
+                          </component>
+                        </children>
+                      </scrollpane>
+                    </children>
+                  </grid>
+                  <grid id="8d877" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                    <margin top="0" left="0" bottom="0" right="0"/>
+                    <constraints>
+                      <splitpane position="right"/>
+                    </constraints>
+                    <properties/>
+                    <border type="none"/>
+                    <children>
+                      <scrollpane id="4629c">
+                        <constraints>
+                          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties/>
+                        <border type="none" title="该课程学生成绩"/>
+                        <children>
+                          <component id="3fd61" class="javax.swing.JTable" binding="table6" default-binding="true">
+                            <constraints/>
+                            <properties>
+                              <background color="-2034196"/>
+                              <foreground color="-12502992"/>
+                            </properties>
+                          </component>
+                        </children>
+                      </scrollpane>
+                    </children>
+                  </grid>
+                </children>
+              </splitpane>
+            </children>
+          </grid>
+          <grid id="d2bb5" layout-manager="GridLayoutManager" row-count="2" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <tabbedpane title="成绩统计"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <component id="6bbbf" class="javax.swing.JButton" binding="statisticButton">
+                <constraints>
+                  <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="统计"/>
+                </properties>
+              </component>
+              <tabbedpane id="73b7e" binding="tabbedPane2" default-binding="true">
+                <constraints>
+                  <grid row="1" column="0" row-span="1" col-span="3" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                    <preferred-size width="200" height="200"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <enabled value="true"/>
+                  <foreground color="-12502992"/>
+                </properties>
+                <border type="none"/>
+                <children>
+                  <grid id="64efe" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                    <margin top="0" left="0" bottom="0" right="0"/>
+                    <constraints>
+                      <tabbedpane title="按课程"/>
+                    </constraints>
+                    <properties/>
+                    <border type="none"/>
+                    <children>
+                      <scrollpane id="e9c56">
+                        <constraints>
+                          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <enabled value="true"/>
+                        </properties>
+                        <border type="none"/>
+                        <children>
+                          <component id="facc5" class="javax.swing.JTable" binding="course">
+                            <constraints/>
+                            <properties>
+                              <background color="-2034196"/>
+                              <enabled value="true"/>
+                              <foreground color="-12502992"/>
+                              <updateSelectionOnSort value="true"/>
+                            </properties>
+                          </component>
+                        </children>
+                      </scrollpane>
+                    </children>
+                  </grid>
+                  <grid id="e2661" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                    <margin top="0" left="0" bottom="0" right="0"/>
+                    <constraints>
+                      <tabbedpane title="按班级"/>
+                    </constraints>
+                    <properties/>
+                    <border type="none"/>
+                    <children>
+                      <scrollpane id="56d28">
+                        <constraints>
+                          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties/>
+                        <border type="none"/>
+                        <children>
+                          <component id="eb7f2" class="javax.swing.JTable" binding="studentClass">
+                            <constraints/>
+                            <properties>
+                              <background color="-2034196"/>
+                              <foreground color="-12502992"/>
+                            </properties>
+                          </component>
+                        </children>
+                      </scrollpane>
+                    </children>
+                  </grid>
+                  <grid id="d586a" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                    <margin top="0" left="0" bottom="0" right="0"/>
+                    <constraints>
+                      <tabbedpane title="按学生"/>
+                    </constraints>
+                    <properties/>
+                    <border type="none"/>
+                    <children>
+                      <scrollpane id="ceda">
+                        <constraints>
+                          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties/>
+                        <border type="none"/>
+                        <children>
+                          <component id="50a04" class="javax.swing.JTable" binding="student">
+                            <constraints/>
+                            <properties>
+                              <background color="-2034196"/>
+                              <foreground color="-12502992"/>
+                            </properties>
+                          </component>
+                        </children>
+                      </scrollpane>
+                    </children>
+                  </grid>
+                  <grid id="47218" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                    <margin top="0" left="0" bottom="0" right="0"/>
+                    <constraints>
+                      <tabbedpane title="按时间"/>
+                    </constraints>
+                    <properties/>
+                    <border type="none"/>
+                    <children>
+                      <scrollpane id="dbed1">
+                        <constraints>
+                          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <foreground color="-12502992"/>
+                        </properties>
+                        <border type="none"/>
+                        <children>
+                          <component id="f9233" class="javax.swing.JTable" binding="time">
+                            <constraints/>
+                            <properties>
+                              <background color="-2034196"/>
+                            </properties>
+                          </component>
+                        </children>
+                      </scrollpane>
+                    </children>
+                  </grid>
+                </children>
+              </tabbedpane>
+              <component id="61dc0" class="javax.swing.JButton" binding="updateButton">
+                <constraints>
+                  <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="更新"/>
+                </properties>
+              </component>
+              <hspacer id="52492">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+              </hspacer>
+            </children>
+          </grid>
+        </children>
+      </tabbedpane>
+    </children>
+  </grid>
+</form>

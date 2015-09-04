@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="jfree:jfreechart:1.0.2" type="repository">
+    <properties maven-id="jfree:jfreechart:1.0.2" />
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/jfreechart-1.0.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/jcommon-1.0.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/junit-3.8.1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

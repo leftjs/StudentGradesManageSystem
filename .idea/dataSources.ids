@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="dataSourceStorage">
+  <data-source name="MySQL - sms@localhost" uuid="1bdf42a0-bfb0-4104-9cb2-7f340e79f150">
+    <database-info product="MySQL" version="5.1.73" jdbc-version="3.0" driver-name="MySQL-AB JDBC Driver" driver-version="mysql-connector-java-5.1.9 ( Revision: ${svn.Revision} )">
+      <extra-name-characters>#@</extra-name-characters>
+      <identifier-quote-string>`</identifier-quote-string>
+    </database-info>
+    <case-sensitivity plain-identifiers="mixed" quoted-identifiers="upper"/>
+    <schema name="" catalog="sms"/>
+    <table name="admin" schema="" catalog="sms" type="TABLE">
+      <column name="id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="username" sqlType="VARCHAR" precision="40" scale="0" nullable="false" jdbcType="12"/>
+      <column name="password" sqlType="VARCHAR" precision="40" scale="0" nullable="false" jdbcType="12"/>
+      <primary-key name="PRIMARY" columns="id"/>
+      <index name="username" unique="true" columns="username"/>
+    </table>
+    <table name="course" schema="" catalog="sms" type="TABLE">
+      <column name="id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="courseName" sqlType="VARCHAR" precision="40" scale="0" nullable="false" jdbcType="12"/>
+      <column name="academicYear" sqlType="VARCHAR" precision="40" scale="0" nullable="false" jdbcType="12"/>
+      <column name="term" sqlType="VARCHAR" precision="40" scale="0" nullable="false" jdbcType="12"/>
+      <column name="teacherId" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="commitStatus" sqlType="VARCHAR" precision="10" scale="0" nullable="true" jdbcType="12"/>
+      <primary-key name="PRIMARY" columns="id"/>
+    </table>
+    <table name="grade" schema="" catalog="sms" type="TABLE">
+      <column name="id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="courseId" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="studentId" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="score" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <primary-key name="PRIMARY" columns="id"/>
+    </table>
+    <table name="gradeDraft" schema="" catalog="sms" type="TABLE">
+      <column name="id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="courseId" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="studentId" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="score" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <primary-key name="PRIMARY" columns="id"/>
+    </table>
+    <table name="student" schema="" catalog="sms" type="TABLE">
+      <column name="id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="username" sqlType="VARCHAR" precision="40" scale="0" nullable="false" jdbcType="12"/>
+      <column name="password" sqlType="VARCHAR" precision="40" scale="0" nullable="false" jdbcType="12"/>
+      <column name="studentCode" sqlType="VARCHAR" precision="64" scale="0" nullable="false" jdbcType="12"/>
+      <column name="name" sqlType="VARCHAR" precision="20" scale="0" nullable="false" jdbcType="12"/>
+      <column name="studentClass" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
+      <column name="age" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
+      <column name="sex" sqlType="VARCHAR" precision="4" scale="0" nullable="true" jdbcType="12"/>
+      <column name="birthday" sqlType="DATE" precision="10" scale="0" nullable="false" jdbcType="91"/>
+      <column name="address" sqlType="VARCHAR" precision="64" scale="0" nullable="true" jdbcType="12"/>
+      <column name="phone" sqlType="VARCHAR" precision="64" scale="0" nullable="true" jdbcType="12"/>
+      <column name="email" sqlType="VARCHAR" precision="64" scale="0" nullable="true" jdbcType="12"/>
+      <primary-key name="PRIMARY" columns="id"/>
+      <index name="username" unique="true" columns="username"/>
+      <index name="studentCode" unique="true" columns="studentCode"/>
+    </table>
+    <table name="teacher" schema="" catalog="sms" type="TABLE">
+      <column name="id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="username" sqlType="VARCHAR" precision="40" scale="0" nullable="false" jdbcType="12"/>
+      <column name="password" sqlType="VARCHAR" precision="40" scale="0" nullable="false" jdbcType="12"/>
+      <column name="name" sqlType="VARCHAR" precision="20" scale="0" nullable="false" jdbcType="12"/>
+      <column name="phone" sqlType="VARCHAR" precision="64" scale="0" nullable="true" jdbcType="12"/>
+      <column name="email" sqlType="VARCHAR" precision="64" scale="0" nullable="true" jdbcType="12"/>
+      <primary-key name="PRIMARY" columns="id"/>
+      <index name="username" unique="true" columns="username"/>
+    </table>
+  </data-source>
+</component>

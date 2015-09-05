@@ -28,7 +28,7 @@ public class JdbcUtils {
     public JdbcUtils() {
         try {
             Class.forName(DRIVER);
-            System.out.println("数据库驱动加载成功");
+            // System.out.println("数据库驱动加载成功");
 
         } catch (Exception e) {
             e.printStackTrace();

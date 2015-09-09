@@ -65,7 +65,9 @@ DROP TABLE if EXISTS chooseCourse;
 CREATE TABLE chooseCourse(
 id INT(11) NOT NULL PRIMARY KEY auto_increment,
 studentId INT(11) NOT NULL ,
-courseId INT (11) NOT NULL
+courseId INT (11) NOT NULL ,
+foreign key (studentId) references student(id) on delete cascade on update cascade,
+FOREIGN KEY (courseId) REFERENCES teacher(id) ON DELETE CASCADE on UPDATE CASCADE
 );
 
 
@@ -77,7 +79,9 @@ create TABLE grade(
 id INT (11) NOT NULL PRIMARY KEY auto_increment,
 courseId INT (11) NOT NULL ,
 studentId INT (11) NOT NULL ,
-score INT (8) NOT NULL
+score INT (8) NOT NULL,
+FOREIGN KEY (courseId) REFERENCES course(id) on DELETE CASCADE ON UPDATE CASCADE ,
+FOREIGN KEY (studentId) REFERENCES student(id) ON DELETE CASCADE ON UPDATE CASCADE
 );
 
 /**
@@ -88,7 +92,9 @@ create TABLE gradeDraft(
 id INT (11) NOT NULL PRIMARY KEY auto_increment,
 courseId INT (11) NOT NULL ,
 studentId INT (11) NOT NULL ,
-score INT (8) NOT NULL
+score INT (8) NOT NULL,
+FOREIGN KEY (courseId) REFERENCES course(id) on DELETE CASCADE ON UPDATE CASCADE ,
+FOREIGN KEY (studentId) REFERENCES student(id) ON DELETE CASCADE ON UPDATE CASCADE
 );
 
 

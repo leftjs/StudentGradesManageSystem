@@ -1,0 +1,12 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="StudentManagerSystem:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/StudentManagerSystem_jar</output-path>
+    <root id="archive" name="StudentManagerSystem.jar">
+      <element id="module-output" name="StudentManagerSystem" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/jfreechart-1.0.2.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/jcommon-1.0.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/junit-3.8.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/mysql-connector-java-5.1.9.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>

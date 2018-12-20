@@ -98,8 +98,8 @@ FOREIGN KEY (studentId) REFERENCES student(id) ON DELETE CASCADE ON UPDATE CASCA
 );
 
 
-insert into student(username,password,studentCode,name,birthday) values ("student","123","12003225","张加胜",curdate());
-insert into teacher(username, password,name) values ("teacher","123",'张加胜');
+insert into student(username,password,studentCode,name,birthday) values ("student","123","12001111","xxx",curdate());
+insert into teacher(username, password,name) values ("teacher","123",'xxx');
 insert into admin(username,password) values ("admin","123");
 
 

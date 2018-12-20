@@ -30,8 +30,8 @@ public class Main {
 //        List<Object> params = new ArrayList<>();
 //        params.add("zhangsan");
 //        params.add("123");
-//        params.add("12003225");
-//        params.add("张加胜");
+//        params.add("12001111");
+//        params.add("xxx");
 //        params.add(date);
 //        try {
 //            boolean flag = jdbcUtils.updateByPreparedStatement(sql, params);

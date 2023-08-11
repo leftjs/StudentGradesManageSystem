@@ -28,6 +28,8 @@ public class Main {
 //
 //        String sql = "insert into student(username,password,studentCode,name,birthday) values(?,?,?,?,?)";
 //        List<Object> params = new ArrayList<>();
+          String username = "vineetit"
+          System.out.println(username);
 //        params.add("zhangsan");
 //        params.add("123");
 //        params.add("12001111");
